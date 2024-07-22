@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "name": "Product 1 update",
+            "image": "https://cdn.gumac.vn/image/01/thoi-trang/dam/shop-thoi-trang-phong-cach-co-dien270520201045135082.jpg",
+            "price": 100000,
+            "category": "Electronics",
+            "id": 1
+        },
+        {
+            "name": "Product 23 uodate 2",
+            "image": "https://cdn.gumac.vn/image/01/2020/tin-tuc-dot-1/bai-8-xu-huong-thoi-trang-2020/du-doan-xu-huong-thoi-trang-2020250220201136321510.jpg",
+            "price": 200000,
+            "category": "Fashion",
+            "id": 2
+        },
+        {
+            "name": "Product 3 3434",
+            "image": "https://product.hstatic.net/1000197303/product/pro_trang_3_948caed0b7ce47fca47ca6eb8ed042e5.jpg",
+            "price": 300000,
+            "category": "Home Appliances",
+            "id": 3
+        },
+        {
+            "name": "Product 4 update",
+            "image": "https://elise.vn/media/catalog/product/cache/f677d7e3a5087b6a18a5b1f320b78594/f/s/fs2404040tskcpu.jpg",
+            "price": "400000",
+            "category": "Books",
+            "id": 4
+        },
+        {
+            "name": "Sản phẩm 12",
+            "image": "https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_25081/dong-ho-treo-tu_main_946_1020.png.webp",
+            "price": "123123",
+            "category": "sdfds",
+            "id": 12
+        },
+        {
+            "name": "Sản phẩm 13",
+            "image": "https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_25081/dong-ho-treo-tu_main_946_1020.png.webp",
+            "price": "2112",
+            "category": "21312",
+            "id": 13
+        }
+    ]
+}
