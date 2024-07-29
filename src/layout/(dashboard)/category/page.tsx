@@ -10,7 +10,7 @@ const CategoryPage = () => {
     const queryClient = useQueryClient();
 
     const { data, isLoading, isError, error } = useQuery({
-        queryKey: ["products"],
+        queryKey: ["cate"],
         queryFn: async () => {
             try {
                 return await axios.get<ICategory[]>(
@@ -42,12 +42,12 @@ const CategoryPage = () => {
                 content: "Danh mục đã được xóa thành công",
             });
             queryClient.invalidateQueries({
-                queryKey: ["category"],
+                queryKey: ["cate"],
             });
         },
         onError: (error) => {
             messageApi.open({
-                type: "success",
+                type: "error",
                 content: error.message,
             });
             throw error;

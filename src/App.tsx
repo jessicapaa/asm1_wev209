@@ -21,7 +21,7 @@ function App() {
             children: [
                 { path: "", element: <HomePage /> },
                 { path: "product/list", element: <ListProduct /> },
-                { path: "product/detail", element: <Product_Detail /> },
+                { path: "product/detail/:id", element: <Product_Detail /> },
             ],
         },
         {

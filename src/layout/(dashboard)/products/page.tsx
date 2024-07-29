@@ -1,5 +1,5 @@
 import { PlusCircleFilled } from "@ant-design/icons";
-import { Button, message, Popconfirm, Table } from "antd";
+import { Button, Image, message, Popconfirm, Table } from "antd";
 import { Link } from "react-router-dom";
 import { IProduct } from "../../../Interface/Product";
 import axios from "axios";
@@ -70,6 +70,21 @@ const ProductPage = (props: Props) => {
             key: "category",
             title: "Danh mục",
             dataIndex: "category",
+        },
+        {
+            key: "description",
+            title: "Mô tả",
+            dataIndex: "description",
+            width: 350,
+        },
+        {
+            key: "image",
+            title: "Ảnh sản phẩm",
+            dataIndex: "image",
+            width: 250,
+            render: (_: any, product: IProduct) => (
+                <Image width={110} src={product.image} />
+            ),
         },
         {
             key: "action",

@@ -1,19 +1,12 @@
-import React from "react";
 import Filter_Product from "./Filter_Product";
 import { Link } from "react-router-dom";
-import { Button, message } from "antd";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { IProduct } from "../Interface/Product";
 import axios from "axios";
 
-type Props = {};
-
-function Product({}: Props) {
-    const [messageApi, contextHolder] = message.useMessage();
-    const queryClient = useQueryClient();
-
-    const { data, isLoading, isError, error } = useQuery({
-        queryKey: ["products"],
+function Product() {
+    const { data } = useQuery({
+        queryKey: ["pro"],
         queryFn: async () => {
             try {
                 return await axios.get<IProduct[]>(
@@ -25,10 +18,6 @@ function Product({}: Props) {
         },
     });
     console.log(data?.data);
-    const dataSource = data?.data.map((product: IProduct) => ({
-        key: product.id,
-        ...product,
-    }));
     return (
         <>
             <div className="container">
@@ -100,29 +89,29 @@ function Product({}: Props) {
 
                 <div className="flex justify-between  ">
                     {/* Product Item */}
-                    <div className="grid grid-cols-3 gap-[22px] pt-[80px]">
+                    <div className="grid  grid-cols-3 gap-[22px] pt-[80px]">
                         {data?.data.map((product: IProduct) => (
                             <div className="relative product_item py-3 px-4 max-w-[300px] border-2 border-solid border-[#eee] ">
-                                <Link to={"/product/detail"}>
+                                <Link to={`/product/detail/${product.id}`}>
                                     <img
                                         src={product.image}
-                                        className="mx-auto"
+                                        className="mx-auto w-[242px] h-[240px] object-cover"
                                         alt="img..loading"
                                     />
                                 </Link>
-                                <div className="info mt-auto">
+                                <div className="info mt-[22px]">
                                     <Link to={"/product/detail"}>
                                         <h3 className="text-[#333] text-[17px] font-bold  leading-[25px]">
                                             {product.name}
                                         </h3>
                                     </Link>
-                                    <div className="flex items-center gap-2 mt-2">
+                                    <div className="flex justify-between items-center gap-2 mt-2">
                                         <p className="text-[#505F4E] font-medium text-[14px] leading-[22px]">
                                             {product.price}
                                         </p>
-                                        {/* <span className="line-through text-[14px] leading-[22px] text-[#828282]">
-                                            $45.00
-                                        </span> */}
+                                        <span className=" text-[14px] leading-[22px] text-[#828282]">
+                                            {product.category}
+                                        </span>
                                     </div>
                                 </div>
                                 {/* <div className="sell absolute top-[10px] left-[14px] bg-[#505F4E] flex items-center justify-center rounded text-white w-[48px] h-[24px]">

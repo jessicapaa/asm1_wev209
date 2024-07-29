@@ -33,9 +33,10 @@ main.home {
 .banner1 {
   background-color: #FFDEE9;
   background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 50%, #e4d7d7 100%);
+}
 
-
-
+.product_list .product:nth-child(n+5) {
+  display: none;
 }
 
 .banner2 {

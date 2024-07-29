@@ -1,14 +1,40 @@
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 import React from "react";
+import { IProduct } from "../Interface/Product";
+import { useParams } from "react-router-dom";
 
 const Product_Cart = () => {
+    const { id } = useParams();
+    console.log(id);
+
+    const { data: product } = useQuery({
+        queryKey: ["products"],
+        queryFn: async () => {
+            try {
+                return await axios.get<IProduct>(
+                    ` http://localhost:3000/products/${id}`
+                );
+            } catch (error) {
+                throw new Error("Call API thất bại");
+            }
+        },
+    });
+    console.log(product?.data);
+    const productDetail = product?.data;
     return (
         <>
             <div className="container mt-[100px]">
-                <div className="flex items-center justify-between">
+                <div className="flex items-start  justify-between">
                     <div className="group-images">
                         <div>
-                            <img src="/assets/img/product_cart_1.png" alt="" />
+                            <img
+                                src={productDetail?.image}
+                                className="w-[355px] h-[355px] object-cover "
+                                alt=""
+                            />
                         </div>
+
                         <div className="mt-[60px] flex items-center justify-center gap-4 ">
                             <img
                                 src="/assets/img/product_cart_thumb_2.png"
@@ -27,22 +53,19 @@ const Product_Cart = () => {
                             />
                         </div>
                     </div>
-
-                    <div className="info">
+                    <div className="info mt-[10px]">
                         <p className="text-[#4E7C32] text-[14px] font-bold tracking-[1.2px] uppercase">
-                            Plant
+                            {productDetail?.category}
                         </p>
                         <h1 className="text-[#1D2025] text-[44px] font-bold leading-[48px] w-[490px] mt-5 mb-6">
-                            Square cultivation pots 0.27 to 2 litres
+                            {productDetail?.name}
                         </h1>
                         <p className="w-[500px] text-[#68707D] text-[16px] font-medium leading-[28px]">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the
+                            {productDetail?.description}
                         </p>
                         <div className="mt-8 flex gap-3 mb-3">
                             <p className="text-[#1D2025] text-[30px] font-bold leading-[26px]">
-                                $125.00
+                                {productDetail?.price}
                             </p>
                             <span className=" px-2 bg-[#FFEDE0] rounded-md text-[#505F4E] font-bold leading-[26px] text-[16px]">
                                 50%

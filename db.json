@@ -1,19 +1,19 @@
 {
   "products": [
     {
-      "name": "Áo thun nam UNIQLO U Crew Neck T-Shirt",
+      "name": "Áo thun nam UNIQLO ",
       "price": 299000,
       "category": "Điện tử cập nhật ",
       "description": "Áo thun nam basic, cổ tròn, tay ngắn, chất liệu cotton 100% mềm mại, thoáng mát, form ôm vừa vặn, phù hợp cho mọi hoạt động.",
-      "image": "https://www.uniqlo.com/us/en/products/E422992-000/00",
+      "image": "https://images.unsplash.com/photo-1721297014475-42f2e99d3271?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "id": 1
     },
     {
-      "name": "sản phẩm 2 update",
-      "price": 1234,
-      "category": "Điện tử cập nhật ",
-      "description": "1",
-      "image": "31231",
+      "name": "Áo thun nữ Good",
+      "price": 290000,
+      "category": "Thời trang nữ",
+      "description": "Mô tả về áo thun nữ",
+      "image": "https://images.unsplash.com/photo-1721614463453-051bd28367b1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "id": 9
     },
     {
@@ -23,6 +23,22 @@
       "description": "123123123123123",
       "image": "https://images.unsplash.com/photo-1721679242133-4574b1408b94?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "id": 10
+    },
+    {
+      "name": "Quần bò nam kaki",
+      "price": 1000000,
+      "category": "Thời trang nam ",
+      "description": "ádad",
+      "image": "https://images.unsplash.com/photo-1721297014475-42f2e99d3271?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 11
+    },
+    {
+      "name": "Áo khoác mưa",
+      "price": 99999,
+      "category": "Thời trang thể thao",
+      "description": "Mô tả về áo khoác",
+      "image": "https://images.unsplash.com/photo-1722100351919-86ee668c88db?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 12
     }
   ],
   "category": [
@@ -43,7 +59,7 @@
       "id": 4
     },
     {
-      "name": "Máy tính",
+      "name": "Máy tính ",
       "id": 5
     }
   ]
