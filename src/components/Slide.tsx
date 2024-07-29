@@ -43,7 +43,7 @@ const Slide = () => {
                         </div>
                     </div>
                 </div>
-                <div className="banner flex items-center h-[670px] relative ">
+                <div className="banner1 flex items-center h-[670px] relative ">
                     <div className="container">
                         <img
                             className=" absolute bottom-0 right-0 "
@@ -72,7 +72,7 @@ const Slide = () => {
                         </div>
                     </div>
                 </div>
-                <div className="banner flex items-center h-[670px] relative ">
+                <div className="banner2 flex items-center h-[670px] relative ">
                     <div className="container">
                         <img
                             className=" absolute bottom-0 right-0 "

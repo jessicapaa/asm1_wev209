@@ -1,46 +1,50 @@
 {
-    "products": [
-        {
-            "name": "Product 1 update",
-            "image": "https://cdn.gumac.vn/image/01/thoi-trang/dam/shop-thoi-trang-phong-cach-co-dien270520201045135082.jpg",
-            "price": 100000,
-            "category": "Electronics",
-            "id": 1
-        },
-        {
-            "name": "Product 23 uodate 2",
-            "image": "https://cdn.gumac.vn/image/01/2020/tin-tuc-dot-1/bai-8-xu-huong-thoi-trang-2020/du-doan-xu-huong-thoi-trang-2020250220201136321510.jpg",
-            "price": 200000,
-            "category": "Fashion",
-            "id": 2
-        },
-        {
-            "name": "Product 3 3434",
-            "image": "https://product.hstatic.net/1000197303/product/pro_trang_3_948caed0b7ce47fca47ca6eb8ed042e5.jpg",
-            "price": 300000,
-            "category": "Home Appliances",
-            "id": 3
-        },
-        {
-            "name": "Product 4 update",
-            "image": "https://elise.vn/media/catalog/product/cache/f677d7e3a5087b6a18a5b1f320b78594/f/s/fs2404040tskcpu.jpg",
-            "price": "400000",
-            "category": "Books",
-            "id": 4
-        },
-        {
-            "name": "Sản phẩm 12",
-            "image": "https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_25081/dong-ho-treo-tu_main_946_1020.png.webp",
-            "price": "123123",
-            "category": "sdfds",
-            "id": 12
-        },
-        {
-            "name": "Sản phẩm 13",
-            "image": "https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_25081/dong-ho-treo-tu_main_946_1020.png.webp",
-            "price": "2112",
-            "category": "21312",
-            "id": 13
-        }
-    ]
+  "products": [
+    {
+      "name": "Áo thun nam UNIQLO U Crew Neck T-Shirt",
+      "price": 299000,
+      "category": "Điện tử cập nhật ",
+      "description": "Áo thun nam basic, cổ tròn, tay ngắn, chất liệu cotton 100% mềm mại, thoáng mát, form ôm vừa vặn, phù hợp cho mọi hoạt động.",
+      "image": "https://www.uniqlo.com/us/en/products/E422992-000/00",
+      "id": 1
+    },
+    {
+      "name": "sản phẩm 2 update",
+      "price": 1234,
+      "category": "Điện tử cập nhật ",
+      "description": "1",
+      "image": "31231",
+      "id": 9
+    },
+    {
+      "name": "sản phẩm hót",
+      "price": 300000,
+      "category": "Thời trang nữ",
+      "description": "123123123123123",
+      "image": "https://images.unsplash.com/photo-1721679242133-4574b1408b94?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 10
+    }
+  ],
+  "category": [
+    {
+      "name": "Thời trang nam ",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Thời trang nữ"
+    },
+    {
+      "name": "Thời trang thể thao",
+      "id": 3
+    },
+    {
+      "name": "Điện thoại",
+      "id": 4
+    },
+    {
+      "name": "Máy tính",
+      "id": 5
+    }
+  ]
 }

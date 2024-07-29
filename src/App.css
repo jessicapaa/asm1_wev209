@@ -4,29 +4,11 @@
   padding: 30px;
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
 
-button {
-  outline: none;
-  overflow: visible;
-  color: inherit;
-  font: inherit;
-  border: none;
 
-
-  background: transparent;
-}
-
-button:focus {
-  margin: 0;
-  border: none !important;
-  outline: none !important;
-
-}
 
 main {
   background-image: url("/assets/svg/bg_footer.svg");
@@ -46,6 +28,20 @@ main.home {
 
 .banner {
   background: linear-gradient(97deg, #B5DCB0 5.13%, rgba(249, 243, 238, 0.00) 139.8%);
+}
+
+.banner1 {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 50%, #e4d7d7 100%);
+
+
+
+}
+
+.banner2 {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
 }
 
 .banner_act {
@@ -192,6 +188,8 @@ main.home {
 
 .slick-slider .slick-next {
   right: 65px;
+  z-index: 999;
+
 }
 
 .slick-slider button {
@@ -215,4 +213,27 @@ main.home {
 
 .slick-slider .slick-next::before {
   background-image: url('/assets/svg/arrow_right.svg');
+}
+
+.range-slider::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  background: #d2ccc8;
+  /* Customize the thumb color */
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  /* Make the thumb circular */
+}
+
+.range-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #4e7c32;
+  /* Customize the thumb color */
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%;
+  /* Make the thumb circular */
 }
