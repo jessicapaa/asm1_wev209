@@ -7,6 +7,7 @@ import { ICategory } from "../../../../Interface/Category";
 import axios from "axios";
 type FieldType = {
     name?: string;
+    image?: string;
 };
 const CategoryPageAdd = () => {
     const [messageApi, contextHolder] = message.useMessage();
@@ -80,6 +81,19 @@ const CategoryPageAdd = () => {
                             {
                                 whitespace: true,
                                 message: "Không được để trống danh mục",
+                            },
+                        ]}
+                    >
+                        <Input />
+                    </Form.Item>
+
+                    <Form.Item<FieldType>
+                        label="Ảnh danh mục"
+                        name="image"
+                        rules={[
+                            {
+                                required: true,
+                                message: "Vui lòng nhập link ảnh danh mục",
                             },
                         ]}
                     >

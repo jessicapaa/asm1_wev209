@@ -33,7 +33,7 @@
       "id": 11
     },
     {
-      "name": "Áo khoác mưa",
+      "name": "Áo khoác mưa update",
       "price": 99999,
       "category": "Thời trang thể thao",
       "description": "Mô tả về áo khoác",
@@ -44,23 +44,43 @@
   "category": [
     {
       "name": "Thời trang nam ",
+      "image": "https://images.unsplash.com/photo-1721616216040-88b305eea70d?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "id": 1
     },
     {
       "id": 2,
-      "name": "Thời trang nữ"
+      "name": "Thời trang nữ",
+      "image": "abc"
     },
     {
       "name": "Thời trang thể thao",
+      "image": "abc",
       "id": 3
     },
     {
       "name": "Điện thoại",
+      "image": "abc",
       "id": 4
     },
     {
       "name": "Máy tính ",
+      "image": "abc",
       "id": 5
+    },
+    {
+      "name": "Laptop",
+      "image": "abc",
+      "id": 6
+    },
+    {
+      "name": "thời trang",
+      "image": "https://images.unsplash.com/photo-1721616216040-88b305eea70d?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 7
+    },
+    {
+      "name": "Điện tử cập nhật ",
+      "image": "https://plus.unsplash.com/premium_photo-1664283745248-0198af7eb96a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 8
     }
   ]
 }

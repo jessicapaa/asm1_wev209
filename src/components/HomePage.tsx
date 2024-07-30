@@ -5,9 +5,7 @@ import About from "./About";
 import Categories from "./Categories";
 import FeedBack from "./FeedBack";
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
     return (
         <>
             <Slide />

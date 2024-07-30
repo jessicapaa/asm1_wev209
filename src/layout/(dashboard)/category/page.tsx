@@ -1,5 +1,5 @@
 import { PlusCircleFilled } from "@ant-design/icons";
-import { Button, message, Popconfirm, Table } from "antd";
+import { Button, Image, message, Popconfirm, Table } from "antd";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
@@ -59,7 +59,15 @@ const CategoryPage = () => {
             title: "Tên Danh mục",
             dataIndex: "name",
         },
-
+        {
+            key: "image",
+            title: "Ảnh danh mục",
+            dataIndex: "image",
+            width: 230,
+            render: (_: any, category: ICategory) => (
+                <Image width={110} src={category.image} />
+            ),
+        },
         {
             key: "action",
             render: (_: any, category: ICategory) => {

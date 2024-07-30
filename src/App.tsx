@@ -17,7 +17,7 @@ function App() {
     const routes = useRoutes([
         {
             path: "",
-            Component: Client,
+            element: <Client />,
             children: [
                 { path: "", element: <HomePage /> },
                 { path: "product/list", element: <ListProduct /> },
@@ -26,7 +26,7 @@ function App() {
         },
         {
             path: "admin",
-            Component: LayoutAdmin,
+            element: <LayoutAdmin />,
             children: [
                 {
                     index: true,

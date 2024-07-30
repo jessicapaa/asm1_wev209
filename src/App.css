@@ -142,7 +142,7 @@ main.home {
 
 .form__checkbox::before,
 .form__checkbox::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
 }
 

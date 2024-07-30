@@ -4,9 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IProduct } from "../Interface/Product";
 
-type Props = {};
-
-const ProductItem = (props: Props) => {
+const ProductItem = () => {
     const { data } = useQuery({
         queryKey: ["prod"],
         queryFn: async () => {
