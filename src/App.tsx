@@ -12,6 +12,7 @@ import CategoryPage from "./layout/(dashboard)/category/page";
 import CategoryPageAdd from "./layout/(dashboard)/category/add/page";
 import CategoryPageEdit from "./layout/(dashboard)/category/edit/page";
 import Dashboard from "./layout/(dashboard)/dashboard/page";
+import CategoryId from "./components/CategoryId";
 
 function App() {
     const routes = useRoutes([
@@ -22,6 +23,7 @@ function App() {
                 { path: "", element: <HomePage /> },
                 { path: "product/list", element: <ListProduct /> },
                 { path: "product/detail/:id", element: <Product_Detail /> },
+                { path: "category/:id", element: <CategoryId /> },
             ],
         },
         {

@@ -3,6 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { ICategory } from "../Interface/Category";
 import { IProduct } from "../Interface/Product";
+import { Link } from "react-router-dom";
 
 interface CategoryWithCount extends ICategory {
     count: number;
@@ -77,11 +78,13 @@ function Categories() {
                             key={category.id}
                             className="item opacity-65 hover:opacity-100 cursor-pointer relative rounded"
                         >
-                            <img
-                                src={category.image}
-                                alt={category.name}
-                                className="object-cover w-[300px] h-[374px]"
-                            />
+                            <Link to={`category/${category.id}`}>
+                                <img
+                                    src={category.image}
+                                    alt={category.name}
+                                    className="object-cover w-[300px] h-[374px]"
+                                />
+                            </Link>
                             <div className="body absolute right-[15px] top-[20px]">
                                 <h3 className="text-white text-[18px] font-semibold leading-[20px]">
                                     {category.name}
